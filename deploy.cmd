@@ -56,8 +56,7 @@ echo Handling Aurelia App deployment.
 
 :: 1. Install JSPM packages and then bundle resources.
 pushd "%DEPLOYMENT_SOURCE%"
-call npm install jspm -g 
-call npm install gulp -g 
+call npm install  
 call jspm install -y
 call gulp bundle
 popd
