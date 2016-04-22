@@ -63,7 +63,7 @@ call gulp bundle
 popd
 
 :: 2. Set files for Kudu not to copy to the Azure Web App.
-SET KUDU_IGNORE=build;custom_typings;doc;node_modules;test;typings;aurelia.protractor.js;deploy.cmd;gulpfile.js;karma.conf.js;package.json;protractor.conf.js;README.md;tsconfig.json;tslint.json;typings.json;wallaby.js
+SET KUDU_IGNORE=.deployment;.editorconfig;.gitignore;.npmignore;build;custom_typings;doc;node_modules;test;typings;aurelia.protractor.js;deploy.cmd;gulpfile.js;karma.conf.js;package.json;protractor.conf.js;README.md;tsconfig.json;tslint.json;typings.json;wallaby.js
 
 :: 3. KuduSync
 IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
